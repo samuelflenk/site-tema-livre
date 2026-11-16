@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro — Desafio das Ilhas de Alola</title>
+    <meta name="description" content="Formulário oficial de inscrição para participar do Desafio das Ilhas na região de Alola.">
+</head>
+<body>
+    <a href="#conteudo-principal">Pular para o conteúdo</a>
+
+    <header>
+        <p><strong>Portal Desafio das Ilhas de Alola</strong></p>
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="dados.html">Dados</a></li>
+                <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal">
+        <h1>Inscrição no Desafio das Ilhas</h1>
+        <p>Preencha os dados abaixo para retirar seu amuleto de participante e iniciar as provas nas ilhas de Alola.</p>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Identificação do Treinador</legend>
+
+                <p>
+                    <label for="nome">Nome completo (obrigatório):</label>
+                    <input type="text" id="nome" name="nome" autocomplete="name" required>
+                </p>
+
+                <p>
+                    <label for="email">E-mail para envio do passe (obrigatório):</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </p>
+
+                <p>
+                    <label for="telefone">Telefone de contato:</label>
+                    <input type="tel" id="telefone" name="telefone" autocomplete="tel">
+                </p>
+
+                <p>
+                    <label for="data-nascimento">Data de nascimento (obrigatório):</label>
+                    <input type="date" id="data-nascimento" name="data_nascimento" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Configuração da Jornada em Alola</legend>
+
+                <p>Escolha seu Pokémon inicial de Alola (obrigatório):</p>
+                <p>
+                    <input type="radio" id="inicial-rowlet" name="pokemon_inicial" value="rowlet" required>
+                    <label for="inicial-rowlet">Rowlet (Tipo Planta / Voador)</label>
+                </p>
+                <p>
+                    <input type="radio" id="inicial-litten" name="pokemon_inicial" value="litten">
+                    <label for="inicial-litten">Litten (Tipo Fogo)</label>
+                </p>
+                <p>
+                    <input type="radio" id="inicial-popplio" name="pokemon_inicial" value="popplio">
+                    <label for="inicial-popplio">Popplio (Tipo Água)</label>
+                </p>
+
+                <p>
+                    <label for="qtd-pokemon">Número de Pokémon registrados na equipe (1 a 6):</label>
+                    <input type="number" id="qtd-pokemon" name="qtd_pokemon" min="1" max="6">
+                </p>
+
+                <p>
+                    <label for="altura-parceiro">Altura do parceiro principal em metros (ex: 0.3):</label>
+                    <input type="number" id="altura-parceiro" name="altura_parceiro" step="0.1" min="0.1">
+                </p>
+
+                <p>
+                    <label for="ilha-inicio">Ilha de partida desejada (obrigatório):</label>
+                    <select id="ilha-inicio" name="ilha_inicio" required>
+                        <option value="">Selecione uma ilha...</option>
+                        <option value="melemele">Ilha de Melemele</option>
+                        <option value="akala">Ilha de Akala</option>
+                        <option value="ulaula">Ilha de Ula'ula</option>
+                        <option value="poni">Ilha de Poni</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Atividades Extras e Termos</legend>
+
+                <p>Atividades paralelas de interesse:</p>
+                <p>
+                    <input type="checkbox" id="extra-battle-royal" name="extras" value="battle_royal">
+                    <label for="extra-battle-royal">Torneio Battle Royal no Domo</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="extra-mantina" name="extras" value="mantina_surf">
+                    <label for="extra-mantina">Surfe em Mantine entre as ilhas</label>
+                </p>
+
+                <p>
+                    <label for="motivacao">Conte por que deseja enfrentar os Pokémon Totem (máximo 300 caracteres):</label>
+                    <textarea id="motivacao" name="motivacao" rows="4" cols="40" maxlength="300"></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="aceite-termos" name="aceite_termos" required>
+                    <label for="aceite-termos">Concordo em respeitar os ecossistemas das ilhas e as regras dos Kahunas (obrigatório).</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Confirmar Inscrição</button>
+                <button type="reset">Limpar Campos</button>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Samuel felipe lenkulkul, 2026</p>
+    </footer>
+</body>
+</html>

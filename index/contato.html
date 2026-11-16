@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato — Desafio das Ilhas de Alola</title>
+    <meta name="description" content="Endereço fictício do Laboratório do Professor Nogueira em Melemele, horários e formulário de contato.">
+</head>
+<body>
+    <a href="#conteudo-principal">Pular para o conteúdo</a>
+
+    <header>
+        <p><strong>Portal Desafio das Ilhas de Alola</strong></p>
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="dados.html">Dados</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="contato.html" aria-current="page">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal">
+        <h1>Contato com o Conselho das Ilhas</h1>
+
+        <section>
+            <h2>Base de Apoio ao Treinador</h2>
+            <address>
+                Laboratório de Pesquisas Pokémon de Alola<br>
+                Praia de Hau'oli, nº 722 — Rota 1<br>
+                Ilha de Melemele, Arquipélago de Alola<br>
+                E-mail: <a href="mailto:atendimento@desafiodasilhas.example.com">atendimento@desafiodasilhas.example.com</a><br>
+                Telefone: <a href="tel:+5547999990722">(47) 99999-0722</a>
+            </address>
+
+            <p>
+                <a href="https://www.openstreetmap.org" target="_blank" rel="noopener noreferrer">Consultar mapa de localização das ilhas no OpenStreetMap</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Horário de Atendimento</h2>
+            <dl>
+                <dt>Segunda a Sexta-feira</dt>
+                <dd>Das 08h30 às 17h30 (entrega de Rotom Dex e registro de amuletos)</dd>
+
+                <dt>Sábados</dt>
+                <dd>Das 09h00 às 12h00 (suporte técnico para Pulseiras Z)</dd>
+
+                <dt>Domingos e Feriados Locais</dt>
+                <dd>Fechado para festivais tradicionais (Centros Pokémon funcionam 24 horas)</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Envie sua Dúvida</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="contato-nome">Seu nome (obrigatório):</label>
+                    <input type="text" id="contato-nome" name="contato_nome" autocomplete="name" required>
+                </p>
+
+                <p>
+                    <label for="contato-email">Seu e-mail (obrigatório):</label>
+                    <input type="email" id="contato-email" name="contato_email" autocomplete="email" required>
+                </p>
+
+                <p>
+                    <label for="contato-assunto">Assunto:</label>
+                    <select id="contato-assunto" name="contato_assunto">
+                        <option value="provas">Dúvidas sobre as provas dos Capitães</option>
+                        <option value="z-crystals">Registro de Z-Crystals</option>
+                        <option value="transporte">Travessia marítima entre ilhas</option>
+                        <option value="outros">Outros assuntos</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="contato-mensagem">Mensagem (obrigatório):</label>
+                    <textarea id="contato-mensagem" name="contato_mensagem" rows="5" cols="40" required></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Enviar Mensagem</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Samuel Felipe Lenkulkul, 2026</p>
+    </footer>
+</body>
+</html>
